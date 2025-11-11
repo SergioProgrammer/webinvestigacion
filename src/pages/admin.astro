@@ -2,11 +2,11 @@
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
-import LandingApp from '../components/LandingApp.jsx';
+import CmsApp from '../cms/CmsApp.jsx';
 ---
 
 <Layout>
 	<Navbar />
-	<LandingApp client:load />
+	<CmsApp client:load />
 	<Footer />
 </Layout>
