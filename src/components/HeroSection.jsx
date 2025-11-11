@@ -17,12 +17,10 @@ const HeroSection = () => {
 	} = useContent();
 
 	return (
-			<section id="hero" className="relative overflow-hidden bg-[#FFFEF2] py-20 text-[#00003D]">
-				<div className="pointer-events-none absolute inset-0">
-					<div className="absolute -left-24 top-10 h-72 w-72 rounded-full bg-[#00003D]/10 blur-3xl" />
-					<div className="absolute bottom-0 right-0 h-96 w-96 translate-x-1/4 rounded-full bg-[#00003D]/15 blur-3xl" />
-				</div>
-				<div className="relative mx-auto grid w-full gap-12 px-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:px-32">
+		<section id="hero" className="relative overflow-hidden bg-[#FFFEF2] py-20 text-[#00003D]">
+			<div className="pointer-events-none absolute inset-0">
+			</div>
+			<div className="relative mx-auto grid max-w-6xl gap-12 px-4 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
 				<div className="space-y-6 text-center lg:text-left">
 					<span className="inline-flex items-center justify-center rounded-full border border-[#00003D]/10 bg-white/80 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-[#00003D] shadow-sm">
 						Investigación aplicada
