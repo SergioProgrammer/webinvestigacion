@@ -15,29 +15,29 @@ const mainLinks = [
 ];
 ---
 
-<header class="sticky top-0 z-50 border-b border-[#FFFEF2]/40 bg-[#00003D]/95 backdrop-blur">
+<header class="sticky top-0 z-50 border-b border-[#c88b2a]/15 bg-[#1F3A68]/95 backdrop-blur">
 	<div class="mx-auto flex w-full items-center justify-between px-16 py-4 lg:px-24">
-		<a href="/" class="flex items-center gap-2 text-xl font-semibold tracking-tight text-[#FFFEF2]">
-			<span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#FFFEF2] text-base font-bold text-[#00003D] shadow-sm">
+		<a href="/" class="flex items-center gap-2 text-2xl font-semibold tracking-tight text-[#F7F3E6]">
+			<span class="inline-flex h-11 w-11 items-center justify-center rounded-full bg-[#c88b2a] text-lg font-bold text-[#1F3A68] shadow-sm">
 				CNE
 			</span>
 			CogNeuEdu
 		</a>
-		<nav class="hidden items-center gap-2 text-sm font-semibold text-[#FFFEF2] md:flex">
+		<nav class="hidden items-center gap-3 text-base font-semibold text-[#F7F3E6] md:flex">
 			{mainLinks.map((item) =>
 				item.subsections ? (
 					<div class="relative group">
 						<button
 							type="button"
-							class="rounded-full px-4 py-2 transition-all duration-200 group-hover:bg-[#FFFEF2] group-hover:text-[#00003D] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#FFFEF2]"
+							class="rounded-full px-5 py-2.5 transition-all duration-200 group-hover:bg-[#c88b2a]/20 group-hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#c88b2a]"
 							aria-haspopup="true"
 						>
 							{item.label}
 						</button>
-						<div class="pointer-events-none absolute left-0 top-full z-30 min-w-[200px] translate-y-2 rounded-2xl border border-[#FFFEF2]/30 bg-white p-2 text-[#00003D] shadow-xl opacity-0 transition group-hover:pointer-events-auto group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100">
+						<div class="pointer-events-none absolute left-0 top-full z-30 min-w-[220px] translate-y-2 rounded-2xl border border-[#1F3A68]/10 bg-[#F7F3E6] p-2 text-[#1F3A68] shadow-xl opacity-0 transition group-hover:pointer-events-auto group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100">
 							{item.subsections.map((subsection) => (
 								<a
-									class="block rounded-xl px-3 py-2 text-sm font-medium hover:bg-[#FFFEF2] hover:text-[#00003D]"
+									class="block rounded-xl px-4 py-2 text-base font-medium hover:bg-[#c88b2a]/10 hover:text-[#1F3A68]"
 									href={subsection.href}
 								>
 									{subsection.label}
@@ -46,24 +46,21 @@ const mainLinks = [
 						</div>
 					</div>
 				) : (
-					<a
-						class="rounded-full px-4 py-2 transition-all duration-200 hover:bg-[#FFFEF2] hover:text-[#00003D] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#FFFEF2]"
-						href={item.href}
-					>
+					<a class="rounded-full px-5 py-2.5 transition-all duration-200 hover:bg-[#c88b2a]/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#c88b2a]" href={item.href}>
 						{item.label}
 					</a>
 				),
 			)}
 			<a
 				href="/#contacto"
-				class="inline-flex items-center rounded-full bg-[#FFFEF2] px-5 py-2 text-sm font-semibold text-[#00003D] shadow-lg shadow-[#00003D]/30 transition hover:shadow-[#00003D]/50"
+				class="inline-flex items-center rounded-full bg-[#c88b2a] px-6 py-2.5 text-base font-semibold text-[#1F3A68] shadow-lg shadow-[#c88b2a]/40 transition hover:bg-[#e3a73c]"
 			>
 				Agendar llamada
 			</a>
 		</nav>
 		<a
 			href="/#contacto"
-			class="inline-flex items-center rounded-full border border-[#FFFEF2] px-4 py-2 text-sm font-semibold text-[#FFFEF2] transition hover:bg-[#FFFEF2]/10 md:hidden"
+			class="inline-flex items-center rounded-full border border-[#c88b2a] px-5 py-2.5 text-base font-semibold text-[#F7F3E6] transition hover:bg-[#c88b2a]/10 md:hidden"
 		>
 			Contacto
 		</a>

@@ -29,7 +29,7 @@ import astroLogo from '../assets/astro.svg';
 		<svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"
 			><path
 				d="M24.667 12c1.333 1.414 2 3.192 2 5.334 0 4.62-4.934 5.7-7.334 12C18.444 28.567 18 27.456 18 26c0-4.642 6.667-7.053 6.667-14Zm-5.334-5.333c1.6 1.65 2.4 3.43 2.4 5.333 0 6.602-8.06 7.59-6.4 17.334C13.111 27.787 12 25.564 12 22.666c0-4.434 7.333-8 7.333-16Zm-6-5.333C15.111 3.555 16 5.556 16 7.333c0 8.333-11.333 10.962-5.333 22-3.488-.774-6-4-6-8 0-8.667 8.666-10 8.666-20Z"
-				fill="#111827"></path></svg
+				fill="#1F3A68"></path></svg
 		>
 		<h2>What's New in Astro 5.0?</h2>
 		<p>
@@ -41,10 +41,10 @@ import astroLogo from '../assets/astro.svg';
 
 <style>
 	#container {
-		font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+		font-family: 'Poppins', Inter, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
 		height: 100%;
-		background-color: #FFFEF2;
-		color: #00003d;
+		background: radial-gradient(circle at top, #fdf8ef 0%, #f7f3e6 55%, #f1e4cb 100%);
+		color: #1F3A68;
 	}
 
 	main {
@@ -75,13 +75,13 @@ import astroLogo from '../assets/astro.svg';
 		display: flex;
 		align-items: center;
 		padding: 10px 12px;
-		color: #111827;
+		color: #1F3A68;
 		text-decoration: none;
 		transition: color 0.2s;
 	}
 
 	#links a:hover {
-		color: rgb(78, 80, 86);
+		color: #c88b2a;
 	}
 
 	#links a svg {
@@ -90,14 +90,14 @@ import astroLogo from '../assets/astro.svg';
 	}
 
 	#links a.button {
-		color: #FFFEF2;
-		background: #00003d;
-		box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.24);
+		color: #1F3A68;
+		background: #c88b2a;
+		box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.12);
 		border-radius: 10px;
 	}
 
 	#links a.button:hover {
-		color: rgb(230, 230, 230);
+		color: #1F3A68;
 		box-shadow: none;
 	}
 
@@ -106,19 +106,19 @@ import astroLogo from '../assets/astro.svg';
 			ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono',
 			monospace;
 		font-weight: normal;
-		color: #00003d;
+		color: #1F3A68;
 		margin: 0;
 	}
 
 	h2 {
 		margin: 0 0 1em;
-		font-weight: normal;
-		color: #111827;
+		font-weight: 600;
+		color: #1F3A68;
 		font-size: 20px;
 	}
 
 	p {
-		color: #4b5563;
+		color: rgba(31, 58, 104, 0.75);
 		font-size: 16px;
 		line-height: 24px;
 		letter-spacing: -0.006em;
@@ -127,18 +127,18 @@ import astroLogo from '../assets/astro.svg';
 
 	code {
 		display: inline-block;
-		background: #FFFEF2;
+		background: #fbf7ee;
 		border-radius: 8px;
-		border: 1px solid #00003d;
+		border: 1px solid #c88b2a;
 		padding: 6px 8px;
-		color: #00003d;
+		color: #1F3A68;
 	}
 
 	.box {
 		padding: 16px;
 		background: rgba(255, 255, 255, 1);
 		border-radius: 16px;
-		border: 1px solid white;
+		border: 1px solid rgba(200, 139, 42, 0.25);
 	}
 
 	#news {
@@ -147,12 +147,14 @@ import astroLogo from '../assets/astro.svg';
 		right: 16px;
 		max-width: 300px;
 		text-decoration: none;
-		transition: background 0.2s;
-		backdrop-filter: blur(50px);
+		transition: background 0.2s, transform 0.2s;
+		backdrop-filter: blur(35px);
+		background: rgba(247, 243, 230, 0.9);
 	}
 
 	#news:hover {
-		background: rgba(255, 255, 255, 0.55);
+		background: rgba(235, 223, 201, 0.9);
+		transform: translateY(-4px);
 	}
 
 	@media screen and (max-height: 368px) {

@@ -1,3 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	:root {
+		--cog-navy: #1f3a68;
+		--cog-blue: #2c4b8c;
+		--cog-ochre: #c88b2a;
+		--cog-amber: #e3a73c;
+		--cog-ivory: #f7f3e6;
+	}
+
+	body {
+		background-color: var(--cog-ivory);
+		color: var(--cog-navy);
+		font-family: 'Poppins', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+		font-size: 1.1rem;
+		line-height: 1.7;
+	}
+
+	.footer-root {
+		font-size: 1rem;
+		line-height: 1.6;
+	}
+}
