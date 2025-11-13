@@ -4,7 +4,7 @@ const neuralHero = {
 	label: 'CogNEuroEdu',
 	title: 'Investigating in Cognitive Neuroscience',
 	description:
-		'Fluxus lucidus de retibus neuronalibus: lumen cognitionis emergit ubi scientia et humanitas se tangunt. In hoc campo, CogNeuroEdu traducit datos en decisiones capaces.',
+		'lumen cognitionis emergit ubi scientia et humanitas se tangunt. In hoc campo, CogNeuroEdu traducit datos en decisiones capaces.',
 	image: '/6210.jpg',
 };
 
