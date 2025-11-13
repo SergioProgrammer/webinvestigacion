@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import LandingApp from '../components/LandingApp.jsx';
+---
+
+<Layout>
+	<Navbar />
+	<LandingApp client:load />
+	<Footer />
+</Layout>

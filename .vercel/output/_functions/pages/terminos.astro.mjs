@@ -1,0 +1,48 @@
+/* empty css                                 */
+import { e as createComponent, k as renderComponent, r as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_DC5jLdQH.mjs';
+import 'kleur/colors';
+import { $ as $$Layout, a as $$Navbar, b as $$Footer } from '../chunks/Footer_l68TYnVj.mjs';
+export { renderers } from '../renderers.mjs';
+
+const $$Terminos = createComponent(($$result, $$props, $$slots) => {
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, {}, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "Navbar", $$Navbar, {})} ${maybeRenderHead()}<main class="mx-auto w-full max-w-5xl px-6 py-16 lg:px-0"> <p class="text-xs font-semibold uppercase tracking-[0.4em] text-[#2c4b8c]/70">Legal</p> <h1 class="mt-4 text-4xl font-semibold text-[#1F3A68]">Términos y condiciones</h1> <p class="mt-2 text-sm text-[#1F3A68]/70">Última actualización: ${(/* @__PURE__ */ new Date()).toLocaleDateString("es-ES")}</p> <section class="mt-10 space-y-6 text-base leading-relaxed text-[#1F3A68]/80"> <p>
+El sitio CogNeuroEdu es administrado por el Grupo de Investigación competitivo y consolidado de la UNED
+				(Referencia 525), con sede en la Facultad de Educación de la Universidad Nacional de Educación a Distancia,
+				C/ Juan del Rosal 14, 28040 Madrid, España. El acceso y uso de esta plataforma implican la aceptación plena
+				de las presentes condiciones.
+</p> <div> <h2 class="text-2xl font-semibold text-[#1F3A68]">Uso permitido</h2> <p>
+El contenido publicado se facilita exclusivamente con fines informativos y académicos. El usuario se
+					compromete a no emplear la información para actividades ilícitas, difamatorias, comerciales sin permiso o
+					que vulneren derechos de terceros. CogNeuroEdu se reserva el derecho de limitar el acceso ante cualquier
+					uso inadecuado.
+</p> </div> <div> <h2 class="text-2xl font-semibold text-[#1F3A68]">Propiedad intelectual</h2> <p>
+Los textos, imágenes, metodologías y logotipos son propiedad del equipo CogNeuroEdu o cuentan con las
+					licencias pertinentes de la UNED. Se prohíbe su reproducción total o parcial sin autorización previa y
+					por escrito. Puedes solicitar permisos escribiendo a <a class="text-[#c88b2a] underline" href="mailto:cogneuroedu@edu.uned.es">cogneuroedu@edu.uned.es</a>.
+</p> </div> <div> <h2 class="text-2xl font-semibold text-[#1F3A68]">Responsabilidad</h2> <p>
+Aunque mantenemos procesos rigurosos de revisión, CogNeuroEdu no garantiza que la información esté libre
+					de errores u omisiones. El usuario asume la responsabilidad por el uso que haga de los contenidos. El
+					sitio puede contener enlaces externos cuya gestión corresponde exclusivamente a sus titulares.
+</p> </div> <div> <h2 class="text-2xl font-semibold text-[#1F3A68]">Modificaciones</h2> <p>
+Nos reservamos el derecho a actualizar estos términos para reflejar nuevas normativas o cambios en
+					nuestros servicios. Las modificaciones entrarán en vigor desde su publicación en esta página.
+</p> </div> <div> <h2 class="text-2xl font-semibold text-[#1F3A68]">Contacto</h2> <p>
+Para dudas legales puedes escribir a <a class="text-[#c88b2a] underline" href="mailto:mt.m.aragoneses@edu.uned.es">mt.m.aragoneses@edu.uned.es</a>
+o llamar al teléfono +34 91 398 73 84. También puedes visitar la Facultad de Educación (UNED) en la
+					dirección indicada.
+</p> </div> </section> </main> ${renderComponent($$result2, "Footer", $$Footer, {})} ` })}`;
+}, "/Users/sergiosandovalpacheco/Desktop/webinvestigacion/src/pages/terminos.astro", void 0);
+
+const $$file = "/Users/sergiosandovalpacheco/Desktop/webinvestigacion/src/pages/terminos.astro";
+const $$url = "/terminos";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+	__proto__: null,
+	default: $$Terminos,
+	file: $$file,
+	url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const page = () => _page;
+
+export { page };
