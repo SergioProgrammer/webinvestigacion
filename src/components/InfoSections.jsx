@@ -1,10 +1,6 @@
-import { useContent } from '../cms/ContentContext.jsx';
+import { infoSections } from '../data/content.js';
 
 const InfoSections = () => {
-	const {
-		content: { sections },
-	} = useContent();
-
 		return (
 			<section className="bg-gradient-to-b from-[#FBF7EF] to-[#F7F3E6] py-20">
 				<div className="mx-auto flex w-full flex-col gap-8 px-16 lg:px-32">
@@ -15,8 +11,8 @@ const InfoSections = () => {
 						Cada bloque explica nuestro acompañamiento, muy similar a la narrativa limpia y aireada de Clínica Barajas.
 					</p>
 				</header>
-				<div className="grid gap-8 md:grid-cols-2">
-					{sections.map((section) => (
+					<div className="grid gap-8 md:grid-cols-2">
+						{infoSections.map((section) => (
 						<article
 							key={section.id}
 							id={section.id}

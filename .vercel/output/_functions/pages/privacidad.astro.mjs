@@ -1,7 +1,7 @@
 /* empty css                                 */
 import { e as createComponent, k as renderComponent, r as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_DC5jLdQH.mjs';
 import 'kleur/colors';
-import { $ as $$Layout, a as $$Navbar, b as $$Footer } from '../chunks/Footer_l68TYnVj.mjs';
+import { $ as $$Layout, a as $$Navbar, b as $$Footer } from '../chunks/Footer_jc5W2cw-.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$Privacidad = createComponent(($$result, $$props, $$slots) => {
