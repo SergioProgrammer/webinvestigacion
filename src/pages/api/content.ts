@@ -87,6 +87,16 @@ export const GET: APIRoute = async () => {
 };
 
 export const POST: APIRoute = async ({ request }) => {
+	if (import.meta.env.PROD) {
+		return new Response(
+			JSON.stringify({ error: 'La edición del contenido está deshabilitada en producción.' }),
+			{
+				status: 405,
+				headers: { 'Content-Type': 'application/json; charset=utf-8' },
+			},
+		);
+	}
+
 	try {
 		const payload = await request.json();
 		let normalized;
